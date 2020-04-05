@@ -197,8 +197,12 @@ class _HomeLeftState extends State<HomeLeft> {
 
       if (toPath != null){
         if (route_WebView == toPath){
-
-          Navigator.of(context).pushNamed(toPath,arguments: VipUrlItem(url:params));
+          var model =  VipUrlItem.fromJson({
+            "name":"点赞",
+            "url":params
+          });
+          print(model);
+          Navigator.of(context).pushNamed(toPath,arguments:model);
         }else{
           Navigator.of(context).pushNamed(toPath,arguments: params);
         }
