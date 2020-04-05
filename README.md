@@ -1,8 +1,8 @@
 # Flutter_Demo
 日记本，仿抖音视频，vip 视频破解
-![image](Simulator Screen Shot - iPhone 11 - 2020-04-05 at 20.45.29.png)
-![image](Simulator Screen Shot - iPhone 11 - 2020-04-05 at 20.45.07.png)
-![image](Simulator Screen Shot - iPhone 11 - 2020-04-05 at 20.44.55.png)
+![image](1.png)
+![image](2.png)
+![image](3.png)
 
 ## 日记的编写与预览 
 * sqLite存储
