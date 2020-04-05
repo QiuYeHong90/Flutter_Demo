@@ -34,7 +34,7 @@ class _YQWebViewState extends State<YQWebView> {
     }
     print("-=-=-=url  $url");
     return BasePageView(
-      isShowAppBar: false,
+      isShowAppBar: true,
       actions: <Widget>[
         IconButton(
           icon: Icon(Icons.more_vert),

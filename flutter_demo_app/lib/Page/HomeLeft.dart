@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_demo_app/Model/VipUrlItem.dart';
 import 'package:flutter_demo_app/Route/Route.dart';
 import 'package:flutter_demo_app/View/ClipRRectContainer.dart';
 import 'package:image_picker/image_picker.dart';
@@ -42,8 +43,10 @@ class HomeLeft extends StatefulWidget{
           "title":"待办",
         },
         {
+          "toPath":route_WebView,
+          "params":"https://github.com/QiuYeHong90/Flutter_Demo",
           "icon":"",
-          "title":"生活",
+          "title":"点赞",
         },
         {
           "toPath":route_VipVideo,
@@ -190,8 +193,16 @@ class _HomeLeftState extends State<HomeLeft> {
   void childTap(Map model,BuildContext context){
       debugPrint("====");
       var toPath = model["toPath"];
+      var params = model["params"];
+
       if (toPath != null){
-        Navigator.of(context).pushNamed(toPath);
+        if (route_WebView == toPath){
+
+          Navigator.of(context).pushNamed(toPath,arguments: VipUrlItem(url:params));
+        }else{
+          Navigator.of(context).pushNamed(toPath,arguments: params);
+        }
+
       }
   }
 
