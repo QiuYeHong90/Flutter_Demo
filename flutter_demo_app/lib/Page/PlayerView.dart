@@ -64,7 +64,6 @@ class _PlayerViewState extends State<PlayerView> {
     // TODO: implement initState
     initMyViewC();
     super.initState();
-    OrientationPlugin.setEnabledSystemUIOverlays([]);
 
 
 
@@ -121,8 +120,6 @@ class _PlayerViewState extends State<PlayerView> {
   @override
   void dispose() {
     super.dispose();
-    OrientationPlugin.setPreferredOrientations(DeviceOrientation.values);
-    OrientationPlugin.setEnabledSystemUIOverlays(SystemUiOverlay.values);
     _controller.dispose();
     print("释放了   $url");
   }
