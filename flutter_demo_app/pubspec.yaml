@@ -39,7 +39,7 @@ dependencies:
   flutter_screenutil:
   video_player:
   flutter_easyrefresh:
-
+  fijkplayer:
 #  flutter_radial_menu:
   #  富文本编辑器
   zefyr:

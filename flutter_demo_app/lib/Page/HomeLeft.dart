@@ -34,9 +34,15 @@ class HomeLeft extends StatefulWidget{
       "title":"标签",
       "data":[
         {
+          "toPath":route_StreamVideo,
+          "params":"http://ivi.bupt.edu.cn/hls/cctv6hd.m3u8",
+          "icon":"",
+          "title":"CCTV6高清",
+        },
+        {
           "style":2,
           "icon":"",
-          "title":"个人(7)",
+          "title":"route_StreamVideo",
         },
         {
           "icon":"",
