@@ -8,41 +8,37 @@ import 'package:image_picker/image_picker.dart';
 class HomeLeft extends StatefulWidget{
 
   var data = [
+//    {
+//      "style":1,
+//      "title":"备忘录",
+//      "data":[
+//        {
+//          "style":2,
+//          "icon":"",
+//          "title":"备忘录(7)",
+//        },
+//        {
+//          "icon":"",
+//          "title":"待办",
+//        },
+//        {
+//          "icon":"",
+//          "title":"提醒",
+//        },
+//        {
+//          "icon":"",
+//          "title":"我的收藏",
+//        },
+//      ],
+//    },
     {
-      "style":1,
-      "title":"备忘录",
-      "data":[
-        {
-          "style":2,
-          "icon":"",
-          "title":"备忘录(7)",
-        },
-        {
-          "icon":"",
-          "title":"待办",
-        },
-        {
-          "icon":"",
-          "title":"提醒",
-        },
-        {
-          "icon":"",
-          "title":"我的收藏",
-        },
-      ],
-    },{
       "title":"标签",
       "data":[
         {
-          "toPath":route_StreamVideo,
-          "params":"http://ivi.bupt.edu.cn/hls/cctv6hd.m3u8",
+          "toPath":route_StreamList,
+          "params":"",
           "icon":"",
-          "title":"CCTV6高清",
-        },
-        {
-          "style":2,
-          "icon":"",
-          "title":"route_StreamVideo",
+          "title":"直播",
         },
         {
           "icon":"",
@@ -58,11 +54,6 @@ class HomeLeft extends StatefulWidget{
           "toPath":route_VipVideo,
           "icon":"",
           "title":"看电影",
-        },
-        {
-          "toPath":route_DouYinVideo,
-          "icon":"",
-          "title":"抖音",
         },
         {
           "toPath":route_DouYinVideo,

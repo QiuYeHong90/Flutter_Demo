@@ -4,7 +4,7 @@ import 'package:flutter_demo_app/Dao/Model/ContentModel.dart';
 
 
 class BasePageView extends StatefulWidget {
-  BasePageView({Key key, this.title, this.body, this.floatingActionButton, this.actions, this.isShowAppBar = true}) : super(key: key);
+  BasePageView({Key key, this.title = "", this.body, this.floatingActionButton, this.actions, this.isShowAppBar = true}) : super(key: key);
 
   // This widget is the home page of your application. It is stateful, meaning
   // that it has a State object (defined below) that contains fields that affect

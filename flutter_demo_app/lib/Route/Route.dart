@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_demo_app/Page/DouYinVideo.dart';
 import 'package:flutter_demo_app/Page/EmptyView.dart';
 import 'package:flutter_demo_app/Page/NewBWL.dart';
+import 'package:flutter_demo_app/Page/StreamList.dart';
 import 'package:flutter_demo_app/Page/StreamVideo.dart';
 import 'package:flutter_demo_app/Page/VideoPlayView.dart';
 import 'package:flutter_demo_app/Page/VipVideo.dart';
@@ -25,6 +26,8 @@ final route_WebView = "/WebView";
 final route_DouYinVideo = "/DouYinVideo";
 final route_VideoPlayView = "/VideoPlayView";
 final route_StreamVideo = "/StreamVideo";
+final route_StreamList = "/StreamList";
+
 
 final Map<String, WidgetBuilder> routes = {
   route_newbwl:(context) => NewBWL(title: "编辑备忘录"),
@@ -38,6 +41,7 @@ final Map<String, WidgetBuilder> routes = {
   route_DouYinVideo: (context) => DouYinVideo(),
   route_VideoPlayView: (context) => VideoPlayView(),
   route_StreamVideo: (context) => StreamVideo(),
+  route_StreamList: (context) => StreamList(),
 
 };
 

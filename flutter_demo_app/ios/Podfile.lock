@@ -1,4 +1,8 @@
 PODS:
+  - BIJKPlayer (0.6.0)
+  - fijkplayer (0.7.1):
+    - BIJKPlayer (~> 0.6.0)
+    - Flutter
   - Flutter (1.0.0)
   - flutter_plugin_android_lifecycle (0.0.1):
     - Flutter
@@ -32,6 +36,7 @@ PODS:
     - Flutter
 
 DEPENDENCIES:
+  - fijkplayer (from `.symlinks/plugins/fijkplayer/ios`)
   - Flutter (from `Flutter`)
   - flutter_plugin_android_lifecycle (from `.symlinks/plugins/flutter_plugin_android_lifecycle/ios`)
   - flutter_webview_plugin (from `.symlinks/plugins/flutter_webview_plugin/ios`)
@@ -49,9 +54,12 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - BIJKPlayer
     - FMDB
 
 EXTERNAL SOURCES:
+  fijkplayer:
+    :path: ".symlinks/plugins/fijkplayer/ios"
   Flutter:
     :path: Flutter
   flutter_plugin_android_lifecycle:
@@ -82,6 +90,8 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/webview_flutter/ios"
 
 SPEC CHECKSUMS:
+  BIJKPlayer: 3254be04cfa8957d69290ef584785563bb5eaf34
+  fijkplayer: bd1cdb4ec94f965ac73db796c9613e6e80d2883b
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
   flutter_plugin_android_lifecycle: 47de533a02850f070f5696a623995e93eddcdb9b
   flutter_webview_plugin: ed9e8a6a96baf0c867e90e1bce2673913eeac694
